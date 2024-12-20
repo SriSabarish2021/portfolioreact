@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+.skillcontainer{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(29, 29, 29);
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@keyframes animatefrnt{
+    from{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes animateback{
+    from{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes animatetools{
+    from{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes animatesoft{
+    from{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes animatelib{
+    from{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.skillcontainerhead{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+.techskill{
+    font-size: 26px;
+    font-family:'Orbitron';
+    font-weight: 600;
+}
+.btnandbox{
+    width: 100%;
+    min-height: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(171, 171, 171, 0.288);
+}
+.skillbtn{
+    width: 100%;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    position: relative;  
+}
+.skilltable{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+.frntendbox{
+    display: flex;
+    min-width: 200px;
+    max-width: 230px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(99, 99, 99);
+    padding: 25px;
+    position: relative;
+    border-radius: 9px;
+    cursor: pointer;
+    transition-duration: 0.8s;
+}
+
+
+.symbolbox{
+    position: absolute;
+    content: '';
+    border: 1px solid rgb(99, 99, 99);
+    border-radius: 10px;
+    left: -10px;
+    top: -10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    transition-duration: 2s;
+}
+.libdiv{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.libbox{
+    border: 1px solid rgb(99, 99, 99) ;
+    padding: 10px;
+    min-width: 100px;
+    max-width: 120px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    transition-duration: 0.7s;
+
+}
+
+.libsym{
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    position: absolute;
+    transition-duration: 0.5s;
+
+}
+.libbox p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family:'Signika';
+    font-size: 14px;
+} 
+
+.libbox:hover .libsym{
+    background-color: transparent;
+    border: 1px solid white;
+    transition-duration: 0.5s;
+}
+
+.frntendbox p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family:'Signika';
+}
+
+.frntendbox:hover .symbolbox{
+    background-color: transparent;
+    border: 1px solid white;
+    transition-duration: 0.5s;
+}
+
+.skilltable{
+    width: 100%;
+    min-height: 400px;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+.skillboxer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid rgb(110, 110, 110);
+    border-radius: 10px;
+    padding-bottom: 25px;
+}
+.skilltableboxheading{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom: 1px solid rgba(123, 123, 123, 0.6);
+}
+.skillimages{
+    padding-right: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.skillimages img{
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    background-color: transparent;
+
+}
+.skilltableboxheading p{
+    font-size: 15px;
+    padding-left: 5px;
+    font-family: 'Orbitron';
+}
+.skilltableboxbody{
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 0px;
+    padding-top: 25px;
+}
+.tablecontent{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+}
+.tablecontentheading{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.tablecontentheading p{
+    font-size: 13px;
+    font-family:'Saira';
+
+}
+.studyline{
+    height: 8px;
+    width: 100%;
+    background-color: rgb(187, 187, 187);
+    border-radius: 50px;
+}
+.cover{
+    height: 8px;
+    border-radius: 50px;
+    background-color: rgb(255, 123, 145);
+}
+

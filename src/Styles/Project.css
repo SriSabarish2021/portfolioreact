@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+.projectcontainer{
+    height:auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+    gap: 40px;
+    padding-bottom: 60px;
+}
+.projhead{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+.projheadcont{
+    font-size: 26px;
+    font-family:'Orbitron';
+    font-weight: 600;
+}
+.projimages{
+    height:auto;
+    width: 100%;
+    padding: 30px;
+    padding-bottom: 60px;
+    padding-top: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 10px;
+
+}
+.projimgaescontainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(auto);
+    justify-items: center;
+    align-self: center;
+    gap: 100px;
+    column-gap: 0px;
+    transition-duration: 0.7s;
+    transition-delay: 0.1s;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.projimg{
+    height: 200px;
+    width: 200px;
+    transition-duration: 0.7s;
+    transition-delay: 0.1s;
+    border-radius: 10px;
+}
+.projimg-1{
+    width: 70%;
+    background-image: url('Projimg/txt2speech.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.projimg-2{
+    width: 100%;
+    background-image: url('Projimg/calc.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.projimg-3{
+    width: 50%;
+    background-image: url('Projimg/weather-finder.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.projimg-4{
+    width: 100%;
+    background-image: url('Projimg/basic-web.png');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-size: cover;
+}
+.projimg-5{
+    width: 70%;
+    background-image: url('Projimg/speech2txt.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.projimg-6{
+    width: 100%;
+    background-image: url('Projimg/keyboard-pianop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.projimg-7{
+    width: 60%;
+    background-image: url('Projimg/canva.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+}
+.projimg-8{
+    width: 100%;
+    background-image: url('Projimg/temp-convertor.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+}
+.projimg-9{
+    width: 70%;
+
+    background-image: url('Projimg/stopwatch.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+}
+.projimg-10{
+    width: 100%;
+
+    background-image: url('Projimg/game.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.projimg-11{
+    width: 60%;
+
+    background-image: url('Projimg/clock.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.projimg-12{
+    width: 70%;
+    background-image: url('Projimg/socialmedia.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.projimg-13{
+    width: 70%;
+    background-image: url('Projimg/addon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.projimg-14{
+    width: 100%;
+
+    background-image: url('Projimg/bmi.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.projimg-15{
+    width: 50%;
+    background-image: url('Projimg/clck.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.projimg-16{
+    width: 50%;
+    background-image: url('Projimg/curconv.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.projimg-17{
+    width: 100%;
+
+    background-image: url('Projimg/calender.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.projimg-18{
+    width: 70%;
+
+    background-image: url('Projimg/qr.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.projimg-19{
+    width: 70%;
+
+    background-image: url('Projimg/pass.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.projimg-20{
+    width: 50%;
+
+    background-image: url('Projimg/quote.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.projimg-21{
+    width: 100%;
+    background-image: url('Projimg/weather.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}.projimg-22{
+    width: 50%;
+    background-image: url('Projimg/clrpick.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}.projimg-23{
+    width: 100%;
+    background-image: url('Projimg/timeclock.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.projimg-24{
+    width: 70%;
+    background-image: url('Projimg/counter.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.projimg-25{
+    width: 100%;
+    background-image: url('Projimg/stpw2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.projimg-26{
+    width: 50%;
+    background-image: url('Projimg/actiondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.projimg-27{
+    width: 100%;
+    background-image: url('Projimg/curconvapp.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.projimg-28{
+    width: 70%;
+    background-image: url('Projimg/simcurapp.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.projimg-29{
+    width: 100%;
+    background-image: url('Projimg/reactpassapp.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.projimg-30{
+    width: 50%;
+    background-image: url('Projimg/reacttoggle.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.projimg-31{
+    width: 70%;
+    background-image: url('Projimg/reactportfolio.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.projimg-32{
+    width: 100%;
+
+    background-image: url('Projimg/Untitled\ design.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.projimg:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(81, 56, 62, 0.26) 0px 130px 160px 12px inset, rgba(0, 0, 0, 0.3) 0px 118px 361px -18px inset;
+    transition-duration: 0.7s;
+    transition-delay: 0.1s;
+}
+.projimginsider{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.projimghref{
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(60, 60, 60);
+    font-weight: 600;
+    padding: 0px;
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgba(255, 255, 255, 0.879);
+    border-radius: 10px;
+    font-family: 'Chakra Petch';
+    opacity: 0;
+    transition-duration: 0.7s;
+    transition-delay: 0.1s;
+}
+.projimg:hover .projimghref{
+    opacity: 1;
+    transition-duration: 0.7s;
+    transition-delay: 0.1s;
+}
+.projimages::-webkit-scrollbar{
+    width: 5px;
+    background-color: aliceblue;
+    border-radius: 50px;
+    
+}
+
+@keyframes leftanimate{
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes rightanimate{
+    from{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+ 
+    }
+}
+@keyframes zoomanimate{
+    from{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+        
+    }
+}
+@keyframes clipanimate{
+    from{
+        opacity: 0;
+        clip-path: inset(100% 100% 0 0);
+    }
+    to{
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }
+}
+.projimg{
+    animation: zoomanimate linear;
+    animation-timeline: view(); 
+    animation-range: entry 0% cover 40%;
+}
+.projimg-4, .projimg-13,.projimg-25{
+    animation: leftanimate linear;
+    animation-timeline: view(); 
+    animation-range: entry 0% cover 40%;
+}
+.projimg-6,.projimg-15,.projimg-27{
+    animation: rightanimate  linear;
+    animation-timeline: view(); 
+    animation-range: entry 0% cover 40%;
+
+}
+.projimg-5,.projimg-14,.projimg-26{
+    animation: zoomanimate linear;
+    animation-timeline: view(); 
+    animation-range: entry 0% cover 40%;
+
+}
+.projimg-10, .projimg-11, .projimg-12, .projimg-16, .projimg-17, .projimg-18 {
+    animation: clipanimate  linear;
+    animation-timeline: view(); 
+    animation-range: entry 0% cover 40%;
+}

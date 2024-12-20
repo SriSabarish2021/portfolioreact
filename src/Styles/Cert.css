@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+.certificationcontainer{
+    height:auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+    gap: 40px;
+    padding-bottom: 60px;
+}
+.certhead{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+.certheadcont{
+    font-size: 26px;
+    font-family:'Orbitron';
+    font-weight: 600;
+}
+.certificateimages{
+    height:auto;
+    width: 100%;
+    padding: 30px;
+    padding-bottom: 60px;
+    padding-top: 20px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.imgaescontainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(auto);
+    justify-items: center;
+    align-self: center;
+    gap: 100px;
+    column-gap: 0px;
+    transition-duration: 0.7s;
+    transition-delay: 0.1s;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.img{
+    background-color: aliceblue;
+    height: 200px;
+    width: 200px;
+    transition-duration: 0.7s;
+    transition-delay: 0.1s;
+    border-radius: 10px;
+}
+.img-1{
+    width: 100%;
+    background-image: url('/Certificationimg/nptel-AI.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-2{
+    width: 60%;
+
+    background-image: url('/Certificationimg/COURSERA-PROJ.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.img-3{
+    width: 70%;
+
+    background-image: url('/Certificationimg/CONG-CLS.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.img-4{
+    width: 70%;
+
+    background-image: url('/Certificationimg/GL-FRT.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-size: cover;
+}
+.img-5{
+    width: 100%;
+    background-image: url('/Certificationimg/GOOGLE-AI.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.img-6{
+    width: 60%;
+
+    background-image: url('/Certificationimg/GL.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.img-7{
+    width: 100%;
+    background-image: url('/Certificationimg/INFO-AI.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+}
+.img-8{
+    width: 60%;
+
+    background-image: url('/Certificationimg/info-DS.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+}
+.img-9{
+    width: 70%;
+
+    background-image: url('/Certificationimg/INFO-WEB DEV.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+}
+.img-10{
+    width: 70%;
+
+    background-image: url('/Certificationimg/PYTHON.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.img-11{
+    width: 60%;
+
+    background-image: url('/Certificationimg/SCALER-AI.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.img-12{
+    width: 100%;
+    background-image: url('/Certificationimg/SCALER.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+}
+.img:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(81, 56, 62, 0.26) 0px 130px 160px 12px inset, rgba(0, 0, 0, 0.3) 0px 118px 361px -18px inset;
+    transition-duration: 0.7s;
+    transition-delay: 0.1s;
+}
+.imginsider{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imghref{
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(60, 60, 60);
+    font-weight: 600;
+    padding: 10px;
+    width: 150px;
+    background-color: rgba(255, 255, 255, 0.879);
+    border-radius: 10px;
+    font-family: 'Chakra Petch';
+    opacity: 0;
+    transition-duration: 0.7s;
+    transition-delay: 0.1s;
+}
+.img:hover .imghref{
+    opacity: 1;
+    transition-duration: 0.7s;
+    transition-delay: 0.1s;
+}
+.certificateimages::-webkit-scrollbar{
+    width: 5px;
+    background-color: aliceblue;
+    border-radius: 50px;
+    
+}
+
+@keyframes animate{
+    from{
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotate(180deg);
+    }
+}
+@keyframes leftanimate{
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes rightanimate{
+    from{
+        opacity: 0;
+        transform: translateX(200%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+ 
+    }
+}
+@keyframes zoomanimate{
+    from{
+        opacity: 0;
+        transform: scale(0.5);
+        transition-duration: 1s;
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+        
+    }
+}
+@keyframes clipanimate{
+    from{
+        opacity: 0;
+        clip-path: inset(100% 100% 0 0);
+    }
+    to{
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }
+}
+.img{
+    animation: animate linear;
+    animation-timeline: view(); 
+    animation-range: entry 0% cover 40%;
+}
+.img-4{
+    animation: leftanimate linear;
+    animation-timeline: view(); 
+    animation-range: entry 0% cover 40%;
+}
+.img-6{
+    animation: rightanimate  linear;
+    animation-timeline: view(); 
+    animation-range: entry 0% cover 40%;
+
+}
+.img-5{
+    animation: zoomanimate linear;
+    animation-timeline: view(); 
+    animation-range: entry 0% cover 40%;
+
+}
+.img-10, .img-11, .img-12{
+    animation: clipanimate  linear;
+    animation-timeline: view(); 
+    animation-range: entry 0% cover 40%;
+}

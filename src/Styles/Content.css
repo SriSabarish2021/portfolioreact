@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inconsolata:wght@200..900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Emblema+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.imgbg{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    padding-right: 0px;
+    padding-left: 80px;
+}
+.imagediv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    border-radius: 30px;
+}
+.imgbg img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 490px;
+    border-radius: 30px;
+    height: 570px;
+}
+@keyframes imganimate{
+    from{
+        opacity: 0;
+        transform: scale(0.5) translateX(-100%) ;
+    }
+    to{
+        opacity: 1;
+        transform: scale(1)  translateX(0px);
+    }
+}
+@keyframes zoomanimate{
+    from{
+        opacity: 0;
+        transform: scale(0.2);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes rotateanimate{
+    from{
+        opacity: 0;
+        transform: scale(0.2) rotate(180deg);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+.contbg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+}
+.bold{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.name{
+    font-size: 35px;
+    font-family:'Emblema One';
+}
+.webdev{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-top: 5px;
+}
+.work{
+    font-size: 30px;
+    font-family:'Roboto Mono' ;
+    font-weight: 600;
+}
+.intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.introcontdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    text-align: justify;
+    
+}
+.introcontdiv{
+    font-size: 14px;
+    font-family: 'Space Grotesk';
+    letter-spacing: 2px;
+    color: rgb(204, 204, 204);
+}
+.homebtn{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    transition-duration: 0.9s;  
+    margin-top: 50px;
+
+}
+.homearrbtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition-duration: 0.9s;  
+    cursor: pointer;
+}
+.arrow{
+    height: 100%;
+    width: 40px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.8s;
+
+}
+.arrowpara{
+    height: 38px;
+    position: relative;
+    color: rgb(0, 0, 0);
+    width:0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    right: 20px;
+    z-index: -1;
+    padding-left: 15px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    opacity: 0;
+    transition-duration: 0.8s;
+    cursor: pointer;
+    font-size: 1px;
+    font-family: 'Kanit';
+}
+
+.homearrbtn:hover .arrowpara{
+    width: 150px;
+    opacity: 1;
+    transition-duration: 0.8s;
+    color: white;
+    font-size: 15px;
+
+}
