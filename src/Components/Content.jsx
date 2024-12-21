@@ -25,40 +25,18 @@ const Content = ({curclr,txtclr,dark}) => {
   return (
     <main className='maincontent'>
         <style>{
-            `.maincontent{
-                width: 100%;
-                height: auto;
-                min-height: 600px;
-                max-height: 100%;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-                text-align: center;
-            }
+            `
             .maincontent::before{
-                content: '';
-                width: 30%;
-                height: 100%;
-                position: fixed;
                 background-color:${curclr};
-                z-index: -10000;
-                transform: skew(20deg);
-                left: -200px;
             }
             .maincontent::after{
-                content: '';
-                height: 100%;
-                width:100%;
-                position: fixed;
                 background-color:${dark?`rgb(28, 28, 28)`:'rgb(234, 234, 234)'} ;
-                z-index: -1000000;
             }
             .homearrbtn:hover .arrowpara{
                 background-color:${curclr};}
             .work{
                 color:${dark?`aliceblue`:`#334257`}  ;}
-            .introcontdiv{
+            .introcontdiv p{
                 color:${dark?`aliceblue`:`#625757`} 
             }`}
             </style>
@@ -69,7 +47,7 @@ const Content = ({curclr,txtclr,dark}) => {
         </div>
         <div className='contbg'>
             <div className='bold'>
-                <p className='name' style={{animation:animate?"zoomanimate 1s linear":'',color:curclr}}>- i'm Sri Sabarish.</p>
+                <p className='name' style={{animation:animate?"zoomanimate 1s linear":'',color:curclr}}><span className={dark?'whiteclr':'blackclr'}>- i'm </span>Sri Sabarish.</p>
                 <div className='webdev'>
                     <p className='work'>Web Developer</p>
                 </div>

@@ -414,3 +414,130 @@
     animation-timeline: view(); 
     animation-range: entry 0% cover 40%;
 }
+
+
+@media screen and (max-width:1200px) {
+    .projimg{
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+    .projimgaescontainer{
+        column-gap: 60px;
+    }
+}
+
+
+
+@media screen and (max-width:960px) {
+    .projimg{
+        width: 100%;
+    }
+
+    .projimgaescontainer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 60px;
+        gap: 60px;
+
+    }
+    .projimg:nth-child(even){
+        animation: rightanimate linear;
+        animation-timeline: view(); 
+        animation-range: entry 0% cover 40%;
+    }
+    .projimg:nth-child(odd){
+        animation: leftanimate linear;
+        animation-timeline: view(); 
+        animation-range: entry 0% cover 40%;
+    }
+
+    .projhead{
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .projectcontainer{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .projimg{
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+    
+}
+
+
+@media screen and (max-width:600px) {
+
+    .projectcontainer{
+        padding-left:20px;
+        padding-right:20px;
+        padding-top: 60px;
+    }
+    .projimgaescontainer{
+        column-gap: 50px;
+        gap: 30px;
+    }
+    .projimages::-webkit-scrollbar{
+        width: 4px;
+        background-color: aliceblue;
+        border-radius: 50px;
+        
+    }
+}
+
+
+@media screen and (max-width:550px) {
+    .projectcontainer{
+        padding-left:60px;
+        padding-right:60px;
+        padding-top: 60px;
+    }
+    .projimgaescontainer{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 60px;
+        gap: 60px;
+
+    }
+    .projimg:nth-child(even){
+        animation: zoomanimate linear;
+        animation-timeline: view(); 
+        animation-range: entry 0% cover 40%;
+    }
+    .projimg:nth-child(odd){
+        animation: zoomanimate linear;
+        animation-timeline: view(); 
+        animation-range: entry 0% cover 40%;
+    }
+    .certhead{
+        padding-left: 0px;
+    }
+    
+}
+
+
+@media screen and (max-width:440px) {
+    .projectcontainer{
+        padding-left:30px;
+        padding-right:30px;
+        padding-top: 60px;
+    }
+    .projimages::-webkit-scrollbar{
+        width: 3px;
+
+    }
+    
+}
+
+@media screen and (max-width:350px) {
+    .projectcontainer{
+        padding-left:20px;
+        padding-right:20px;
+    }
+    
+}

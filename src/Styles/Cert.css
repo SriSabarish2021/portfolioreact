@@ -53,10 +53,12 @@
 .img{
     background-color: aliceblue;
     height: 200px;
-    width: 200px;
+    width: 100%;
     transition-duration: 0.7s;
     transition-delay: 0.1s;
     border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .img-1{
     width: 100%;
@@ -281,4 +283,132 @@
     animation: clipanimate  linear;
     animation-timeline: view(); 
     animation-range: entry 0% cover 40%;
+}
+
+
+
+@media screen and (max-width:1200px) {
+    .img{
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+    .imgaescontainer{
+        column-gap: 60px;
+    }
+}
+
+
+
+
+@media screen and (max-width:900px) {
+    .img{
+        width: 100%;
+    }
+
+    .imgaescontainer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 60px;
+        gap: 60px;
+
+    }
+    .img-3, .img-4{
+        animation: zoomanimate linear;
+        animation-timeline: view(); 
+        animation-range: entry 0% cover 40%;
+    }
+    .certhead{
+        padding-left: 0px;
+    }
+}
+
+
+@media screen and (max-width:700px) {
+    .certificationcontainer{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .img{
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    .img{
+        width: 100%;
+    }
+    .certificationcontainer{
+        padding-left:20px;
+        padding-right:20px;
+        padding-top: 60px;
+    }
+    .imgaescontainer{
+        column-gap: 50px;
+        gap: 30px;
+    }
+    .certificateimages::-webkit-scrollbar{
+        width: 4px;
+        background-color: aliceblue;
+        border-radius: 50px;
+        
+    }
+}
+
+@media screen and (max-width:550px) {
+    .certificationcontainer{
+        padding-left:60px;
+        padding-right:60px;
+        padding-top: 60px;
+    }
+    .imgaescontainer{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 60px;
+        gap: 60px;
+
+    }
+    .img-2,.img-4,.img-6,.img-8,.img-10,.img-12{
+        animation: leftanimate linear;
+        animation-timeline: view(); 
+        animation-range: entry 0% cover 40%;
+    }
+    .img-3,.img-5,.img-7,.img-9,.img-11{
+        animation: rightanimate linear;
+        animation-timeline: view(); 
+        animation-range: entry 0% cover 40%;
+    }
+    .certhead{
+        padding-left: 0px;
+    }
+    
+}
+
+
+@media screen and (max-width:440px) {
+    .certificationcontainer{
+        padding-left:30px;
+        padding-right:30px;
+        padding-top: 60px;
+    }
+    .certificateimages::-webkit-scrollbar{
+        width: 3px;
+
+    }
+    
+}
+
+@media screen and (max-width:350px) {
+    .certificationcontainer{
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+    .img{
+        animation: zoomanimate linear;
+        animation-timeline: view(); 
+        animation-range: entry 0% cover 40%;
+    }
 }

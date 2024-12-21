@@ -6,6 +6,7 @@ import { MdOutlineHorizontalRule } from "react-icons/md";
 const About = ({curclr,txtclr,dark}) => {
   return (
     <div className='about' style={{backgroundColor:dark?`rgb(28, 28, 28)`:`rgb(234, 234, 234)`}}>
+      <div className='padderabt'>
       <div className='aboutname'>
         <p style={{color:dark?`white`:`#625757`}}>About <span className='span' style={{color:curclr}}>Me</span></p>
       </div>
@@ -83,6 +84,8 @@ const About = ({curclr,txtclr,dark}) => {
           </div>
         </div>
       </div>
+      </div>
+     
     </div>
   )
 }

@@ -63,11 +63,8 @@ const Contact = ({curclr}) => {
             transition-duration: 0.5s;}
 
             .alertcontainer p{
-            font-size: 20px;
-            font-family: 'Exo';
-            font-weight: 600;
             color: ${curclr};
-            text-align: center;}
+            }
 
             .submitbtndiv button{
              background-color: ${curclr};}

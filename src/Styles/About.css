@@ -12,6 +12,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+}
+.padderabt{
+    width: 100%;
 }
 .aboutname{
     width: 100%;
@@ -186,4 +190,182 @@
     text-align: center;
     font-family: 'Nunito';
     font-size: 14px;
+}
+
+@media screen and (max-width:1300px) {
+    .about{
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+    .aboutcontent{
+        gap: 20px;
+    }
+
+}
+@media screen and (max-width:1100px) {
+    .about{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .infordiv{
+        gap: 0px;
+    }
+
+
+}
+@media screen and (max-width:1000px) {
+    .box1, .box2, .box3, .box4{
+        padding-bottom: 5px;
+    }
+    .padderabt{
+        padding-top: 600px;
+        width: 100%;
+    }
+    .about{
+        padding-left: 160px;
+        padding-right: 160px;
+        overflow-y: scroll;
+        padding-bottom: 100px;
+    }
+    .aboutcontent{
+        min-height: 800px;
+        max-height: auto;
+        flex-direction: column;
+    }
+
+}
+
+
+@media screen and (max-width:860px) {
+    .about{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+}
+@media screen and (max-width:700px) {
+    .about{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .infordiv{
+        gap: 20px;
+    }
+
+}
+@media screen and (max-width:600px) {
+    .about{
+        
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .infordiv{
+        gap: 20px;
+    }
+    .btndown{
+       width: 100%;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+    }
+
+}
+@media screen and (max-width:500px) {
+    .aboutcontent{
+        margin-top: 0px;
+    }
+    .padderabt{
+        padding-top: 500px;
+    }
+    .about{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .personalinfo{
+        
+        padding-bottom: 10px;
+    }
+
+    .infocont1{
+        width: 100%;
+
+    }
+    .infocont1 p{
+        width: 100%;
+        text-align: center;
+
+    }
+    .infordiv{   
+        height: 300px;
+        overflow-y: scroll;
+        padding-top: 200px;
+        flex-direction: column;
+        gap: 0px;
+    }
+   .resdown{
+    width: 60%;
+    font-size: 15px;
+   }
+   .aboutname p{
+    font-size: 44px;
+}
+.inforhead{
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+}
+@media screen and (max-width:440px) {
+    .box1, .box2, .box3, .box4{
+        padding-right: 5px;
+    }
+    .boxdivpara{
+        font-size: 14px;
+    }
+    .line{
+        font-size: 10px;
+    }
+    .inforhead{
+        padding-left: 20px;
+        padding-top: 20px;
+        font-size: 18px;
+    }
+    .resdown a {
+        padding-left: 20px;
+    
+    }
+    .padderabt{
+        padding-top: 500px;
+        width: 100%;
+    }
+
+
+}
+@media screen and (max-width:400px) {
+    .infocont1 p{
+        font-size: 13px;
+    }
+    .infordiv{  
+        padding-top: 150px;
+        
+    }
+    .about{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .inforhead{
+        padding-left: 40px;
+    }
+
+}
+@media screen and (max-width:360px) {
+
+    .skills{
+        gap: 20px;
+    }
+    .resdown{
+        font-size: 13px;
+       }
+
 }

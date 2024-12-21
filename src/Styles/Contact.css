@@ -201,7 +201,12 @@
     padding-top: 30px;
     padding-bottom: 30px;
 }
-
+.alertcontainer p{
+    font-size: 20px;
+    font-family: 'Exo';
+    font-weight: 600;
+    text-align: center;
+}
 .subalert{
     height: 100%;
     width: 100%;
@@ -265,4 +270,158 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
+}
+
+
+
+@media screen and (max-width:1200px) {
+    .linktocontatct{
+        padding-left: 0px;
+    }
+}
+@media screen and (max-width:1100px) {
+    .inputboxes{
+        padding-right: 0px;
+    }
+    .contactform{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .contactcontents{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+
+
+@media screen and (max-width:900px) {
+    
+    .contactcontainer{
+        min-height: 100%;
+        max-height: auto;
+        position: fixed;
+        padding-top: 400px;
+        overflow-y: scroll;
+
+    }
+    .contacthead{
+        padding-left: 0px;
+    }
+    .contactcontents{
+        min-height: 1200px;
+        max-height: auto;
+    }
+    .contactform{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 60px;
+    }
+    .linktocontatct{
+
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        padding-left: 0px;
+        gap: 90px;
+    
+    }
+    .call{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            padding-left: 0px;
+        
+    }
+    .subalert{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 200px;
+        height: 1050px;
+    }
+    .close{
+        top: 40px;
+    }
+}
+@media screen and (max-width:760px) {
+    
+    .phone{
+        font-size: 32px;
+    }
+    .calltxt{
+        font-size: 21px;
+    }
+    
+}
+
+
+@media screen and (max-width:460px) {
+    
+    .contactcontents{
+        padding-left: 60px;
+        padding-right: 60px;
+
+    }
+    .waytocall{
+        font-size: 14px;
+    }
+    .close{
+        top: 40px;
+        right: 60px;
+    }
+    
+}
+
+@media screen and (max-width:400px) {
+    
+    .contactcontents{
+        padding-left: 30px;
+        padding-right: 30px;
+
+    }
+    .waytocall{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:710px) {
+    
+    .alertcontainer button{
+        padding: 8px;
+        font-size: 16px;
+    }
+    .alertcontainer p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    
+    .alertcontainer{
+        width: 500px;
+    }
+}
+@media screen and (max-width:520px) {
+    
+    .alertcontainer{
+        width: 400px;
+    }
+}
+@media screen and (max-width:420px) {
+    
+    .alertcontainer{
+        width: 300px;
+    }
 }

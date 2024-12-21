@@ -11,7 +11,32 @@
     height: 100%;
     padding: 10px;
     z-index: 100000;
+    min-width: 50px;
 }
+.navbtnformob{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+    background-color: rgb(51, 51, 51);
+    color: aliceblue;
+    bottom:30px;
+    cursor: pointer;
+    display: none;
+}
+.icon{
+    transition: transform 0.5s ease
+}
+#addani{
+    transform: rotate3d(2, 2, 2, 360deg);
+    transition-duration: 1s;
+}
+
 .ul{
     display: flex;
     flex-direction: column;
@@ -68,4 +93,60 @@
     font-size: 15px;
 }
 
+@media screen and (max-width:770px) {
+    .homelipara{
+        display: none;
+    }
+}
 
+
+@media screen and (max-width:710px) {
+  
+    .ul{
+        opacity: 0;
+        transition: transform 1s cubic-bezier(0.28, 1.12, 0.32, 1.2);
+    }
+    
+    #animatein{
+        transform: translateY(0px) scale(1);
+        opacity: 1;
+        transition-duration: 1s;
+    }
+   #animateout{
+        transform: translateY(600px) scale(0.1);
+        opacity: 0.5;
+        transition-duration: 1.5s;
+   }
+    .navbtnformob{
+        display: flex;
+        right: 20px;
+    }
+}
+@keyframes ulmoveanimation{
+    from{
+        
+    }
+    to{
+        
+    }
+}
+
+@keyframes uloutanimation{
+    from{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    to{
+        transform: translateY(600px);
+        opacity: 0;
+    }
+}
+
+
+
+@media screen and (max-width:430px) {
+    .hmpa{
+        font-size: 16px;
+        padding: 9px;
+    }
+}

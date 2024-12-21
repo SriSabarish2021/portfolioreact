@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../Styles/Nav.css"
 import { FaHome } from "react-icons/fa";
 import { IoPerson } from "react-icons/io5";
@@ -7,8 +7,13 @@ import { LiaCertificateSolid } from "react-icons/lia";
 import { FaFolderOpen } from "react-icons/fa6";
 import { MdOutlinePhoneForwarded } from "react-icons/md";
 import { NavLink } from 'react-router-dom';
+import { RiAppsLine } from "react-icons/ri";
 
 const Nav = ({location,curclr,txtclr}) => {
+  const [navdisp,setnavdisp]=useState(false)
+  let setnavtoanimate=()=>{
+    setnavdisp(navdisp=>!navdisp)
+  }
   console.log(txtclr);
     let pathname=location.pathname
   let homepath=String(location.pathname).length
@@ -30,7 +35,7 @@ const Nav = ({location,curclr,txtclr}) => {
           `
         }
       </style>
-      <ul className='ul'>
+      <ul className='ul' id={navdisp?'animatein':'animateout'}>
         <NavLink to='/'>
           <div className='homeli' >
               <p className='homelipara' style={{color:txtclr?'black':'white'}}>Home</p>
@@ -68,6 +73,9 @@ const Nav = ({location,curclr,txtclr}) => {
           </div>
         </NavLink>
       </ul>
+      <div className='navbtnformob' onClick={()=>setnavtoanimate()}>
+        <p id={navdisp?'addani':''} className='icon' ><RiAppsLine/></p>
+      </div>
     </div>
   )
 }
