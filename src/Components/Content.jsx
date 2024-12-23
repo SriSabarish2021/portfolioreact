@@ -25,7 +25,7 @@ const Content = () => {
             </style>
         <div className='imgbg'>
             <div className='imagediv' style={{animation:animate?"imganimate 1.5s cubic-bezier(.47,1.64,.41,.8) forwards":''}}>
-                <img src="public/Profileimg/myimg.png" alt="Sri Sabarish.png" />
+                <img src="/Profileimg/myimg.png" alt="Sri Sabarish.png" />
                 
             </div>
         </div>
