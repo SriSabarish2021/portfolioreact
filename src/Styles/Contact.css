@@ -312,8 +312,13 @@
         padding-left: 0px;
     }
     .contactcontents{
-        min-height: 1200px;
+        min-height: 1500px;
         max-height: auto;
+        justify-content: flex-start;
+        padding-top: 300px;
+    }
+    .contactheadcontent{
+        padding-left: 25px;
     }
     .contactform{
         

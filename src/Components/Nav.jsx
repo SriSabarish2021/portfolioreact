@@ -17,9 +17,8 @@ const Nav = () => {
   let setnavtoanimate=()=>{
     setnavdisp(navdisp=>!navdisp)
   }
-  console.log(txtclr);
     let pathname=location.pathname
-  let homepath=String(location.pathname).length
+    let homepath=String(location.pathname).length
   
   return (
     <div className='nav'>
