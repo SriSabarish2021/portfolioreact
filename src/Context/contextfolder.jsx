@@ -435,8 +435,8 @@ let showclor=()=>{
     }
 
 return(
-  <Createcontext.Provider value={{dispatch,setdarker,dark,clrcont,showclor,curclr,txtclr,gotoabout,animate,frntbtn,backendbtn,toolsbtn,softskillbtn,libbtn,showfrnt,showback,showtools,showsoft,showlib,nextchange,prevchange,certi,projwork,homereturn,bgimgurl,contactsubtbn,closealert,name,email,message,setname,setemail,setmessage,alert,location}}>
+  <Createcontextsetter.Provider value={{dispatch,setdarker,dark,clrcont,showclor,curclr,txtclr,gotoabout,animate,frntbtn,backendbtn,toolsbtn,softskillbtn,libbtn,showfrnt,showback,showtools,showsoft,showlib,nextchange,prevchange,certi,projwork,homereturn,bgimgurl,contactsubtbn,closealert,name,email,message,setname,setemail,setmessage,alert,location}}>
     {children}
-  </Createcontext.Provider>
+  </Createcontextsetter.Provider>
 )
 }

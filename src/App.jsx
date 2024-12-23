@@ -8,12 +8,8 @@ import Contact from './Components/Contact'
 import About from './Components/About'
 import Header from './Components/Header'
 import Nav from './Components/Nav'
-<<<<<<< HEAD
-import { ContextSetter } from './Context/contextfolder'
 
-=======
-import  ContextSetter  from './Context/Createcontext'
->>>>>>> 2f33cee83629bdb25bb840abac7b319e348d2da9
+import { ContextSetter } from './Context/contextfolder'
 
 function App() {
 
