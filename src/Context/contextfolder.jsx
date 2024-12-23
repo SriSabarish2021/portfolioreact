@@ -33,8 +33,6 @@ export const ContextSetter=({children})=>{
  
      /*  Content page items ends*/
       /*  Certification pag starts */
-      let certilocation=useLocation()
-      let certificationpath=String(certilocation.pathname).includes('/certificates')
 
       const [certi,setceti]=useState([])
       useEffect(() => {
@@ -92,13 +90,12 @@ export const ContextSetter=({children})=>{
         return () => {
           setceti([])
         }
-      }, [certificationpath])
+      }, [])
 
      /*  Certificate page  ends*/
            /*  project  page starts */
 
-     let projlocation=useLocation()
-     let projectpath=String(projlocation.pathname).includes('/projects')
+
      const [projwork,setprojwork]=useState([])
      useEffect(() => {
        let projectarray=[
@@ -269,7 +266,7 @@ export const ContextSetter=({children})=>{
        return () => {
          setprojwork([])
        }
-     }, [projectpath])
+     }, [])
 
 
       /*  project  page ends */
@@ -435,7 +432,7 @@ let showclor=()=>{
     }
 
 return(
-  <Createcontextsetter.Provider value={{dispatch,setdarker,dark,clrcont,showclor,curclr,txtclr,gotoabout,animate,frntbtn,backendbtn,toolsbtn,softskillbtn,libbtn,showfrnt,showback,showtools,showsoft,showlib,nextchange,prevchange,certi,projwork,homereturn,bgimgurl,contactsubtbn,closealert,name,email,message,setname,setemail,setmessage,alert,location}}>
+  <Createcontextsetter.Provider value={{dispatch,setdarker,dark,clrcont,showclor,curclr,txtclr,gotoabout,animate,frntbtn,backendbtn,toolsbtn,softskillbtn,libbtn,showfrnt,showback,showtools,showsoft,showlib,nextchange,prevchange,certi,projwork,homereturn,bgimgurl,contactsubtbn,reference,closealert,name,email,message,setname,setemail,setmessage,alert,location}}>
     {children}
   </Createcontextsetter.Provider>
 )
