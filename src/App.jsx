@@ -8,13 +8,14 @@ import Contact from './Components/Contact'
 import About from './Components/About'
 import Header from './Components/Header'
 import Nav from './Components/Nav'
-import { ContextSetter } from './Context/Createcontext'
+import { ContextSetter } from './Context/contextfolder'
+
 
 function App() {
 
   return (
    <div className='app'>
-    <ContextSetter >
+    <ContextSetter>
       <Header/>
       <Routes>
         <Route path='/' >

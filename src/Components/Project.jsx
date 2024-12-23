@@ -1,9 +1,9 @@
 import "../Styles/Project.css"
 import { useContext } from 'react'
-import { Createcontext } from '../Context/Createcontext'
+import { Createcontextsetter } from '../Context/contextfolder'
 
 const Project = () => {
- const {curclr,dark,projwork}=useContext(Createcontext)
+ const {curclr,dark,projwork}=useContext(Createcontextsetter)
   
   return (
     <div className='projectcontainer' style={{backgroundColor:dark?`rgb(28, 28, 28)`:`rgb(234, 234, 234)`}}>

@@ -3,10 +3,10 @@ import "../Styles/About.css"
 import { FaDownload } from "react-icons/fa6";
 import { MdOutlineHorizontalRule } from "react-icons/md";
 import { useContext } from 'react';
-import { Createcontext } from '../Context/Createcontext';
+import { Createcontextsetter } from '../Context/contextfolder';
 
 const About = () => {
-  const {curclr,txtclr,dark}=useContext(Createcontext)
+  const {curclr,txtclr,dark}=useContext(Createcontextsetter)
   return (
     <div className='about' style={{backgroundColor:dark?`rgb(28, 28, 28)`:`rgb(234, 234, 234)`}}>
       <div className='padderabt'>

@@ -1,7 +1,7 @@
 import { createContext } from 'react'
 import { useEffect, useReducer, useState, useLayoutEffect, useRef} from 'react';
 import {  useLocation, useNavigate  } from 'react-router-dom'
-export const Createcontext = createContext({})
+export const Createcontextsetter = createContext({})
 
 
 export const ContextSetter=({children})=>{

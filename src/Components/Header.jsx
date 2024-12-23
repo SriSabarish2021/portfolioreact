@@ -3,10 +3,10 @@ import "../Styles/Header.css"
 import { SlSettings } from "react-icons/sl";
 import { MdOutlineWbSunny } from "react-icons/md";
 import { FaDroplet } from "react-icons/fa6";
-import { Createcontext } from '../Context/Createcontext';
+import { Createcontextsetter } from '../Context/contextfolder';
 
 const Header = () => {
-  const {dispatch,setdarker,dark,clrcont,showclor}=useContext(Createcontext)
+  const {dispatch,setdarker,dark,clrcont,showclor}=useContext(Createcontextsetter)
   return (
     <div className='header'>
         <div className='settings'>

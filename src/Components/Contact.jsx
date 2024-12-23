@@ -5,11 +5,11 @@ import { TbBrandGithubFilled } from "react-icons/tb";
 import { CgCloseO } from "react-icons/cg";
 import { FaHome } from "react-icons/fa";
 import { useContext } from "react";
-import { Createcontext } from "../Context/Createcontext";
+import { Createcontextsetter } from "../Context/contextfolder";
 
 const Contact = () => {
  
-  const {curclr,homereturn,bgimgurl,setname,setemail,setmessage,name,email,message,alert,contactsubtbn,closealert,reference}=useContext(Createcontext)
+  const {curclr,homereturn,bgimgurl,setname,setemail,setmessage,name,email,message,alert,contactsubtbn,closealert,reference}=useContext(Createcontextsetter)
   return (
     <div className='contactcontainer' style={{backgroundImage:`url(${bgimgurl})`}}>
       <style>

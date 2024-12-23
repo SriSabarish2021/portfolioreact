@@ -7,10 +7,10 @@ import { IoLibrary } from "react-icons/io5";
 import { IoArrowBackCircle } from "react-icons/io5";
 import { IoArrowForwardCircle } from "react-icons/io5";
 import { useContext } from "react";
-import { Createcontext } from "../Context/Createcontext";
+import { Createcontextsetter } from "../Context/contextfolder";
 
 const Skills = () => {
-const {curclr,dark,nextchange,prevchange,frntbtn,backendbtn,toolsbtn,softskillbtn,libbtn,showfrnt,showback,showtools,showsoft,showlib}=useContext(Createcontext)
+const {curclr,dark,nextchange,prevchange,frntbtn,backendbtn,toolsbtn,softskillbtn,libbtn,showfrnt,showback,showtools,showsoft,showlib}=useContext(Createcontextsetter)
 
   return (
     <div className='skillcontainer' style={{backgroundColor:dark?`rgb(28, 28, 28)`:`rgb(234, 234, 234)`}}>

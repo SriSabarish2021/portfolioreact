@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
 import "../Styles/Cert.css"
-import { Createcontext } from '../Context/Createcontext'
+import { Createcontextsetter } from '../Context/contextfolder'
 
 const Cert = () => {
-   const {curclr,dark,certi}=useContext(Createcontext)
+   const {curclr,dark,certi}=useContext(Createcontextsetter)
  
   return (
     <div className='certificationcontainer'  style={{backgroundColor:dark?`rgb(28, 28, 28)`:`rgb(234, 234, 234)`}}>

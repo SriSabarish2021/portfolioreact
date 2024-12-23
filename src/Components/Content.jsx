@@ -1,10 +1,10 @@
 import "../Styles/Content.css"
 import { FaArrowRight } from "react-icons/fa";
 import { useContext } from 'react';
-import { Createcontext } from '../Context/Createcontext';
+import { Createcontextsetter } from '../Context/contextfolder';
 
 const Content = () => {   
-    const {curclr,txtclr,dark,gotoabout,animate}=useContext(Createcontext)
+    const {curclr,txtclr,dark,gotoabout,animate}=useContext(Createcontextsetter)
   return (
     <main className='maincontent'>
         <style>{

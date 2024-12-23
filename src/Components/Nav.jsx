@@ -9,10 +9,10 @@ import { MdOutlinePhoneForwarded } from "react-icons/md";
 import { NavLink } from 'react-router-dom';
 import { RiAppsLine } from "react-icons/ri";
 import { useContext } from 'react';
-import { Createcontext } from '../Context/Createcontext';
+import { Createcontextsetter } from '../Context/contextfolder';
 
 const Nav = () => {
-  const {location,curclr,txtclr} =useContext(Createcontext)
+  const {location,curclr,txtclr} =useContext(Createcontextsetter)
   const [navdisp,setnavdisp]=useState(false)
   let setnavtoanimate=()=>{
     setnavdisp(navdisp=>!navdisp)
