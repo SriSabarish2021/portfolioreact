@@ -33,6 +33,8 @@ export const ContextSetter=({children})=>{
  
      /*  Content page items ends*/
       /*  Certification pag starts */
+      let certilocation=useLocation()
+      let certificationpath=String(certilocation.pathname).includes('/certificates')
 
       const [certi,setceti]=useState([])
       useEffect(() => {
@@ -90,12 +92,13 @@ export const ContextSetter=({children})=>{
         return () => {
           setceti([])
         }
-      }, [])
+      }, [certificationpath])
 
      /*  Certificate page  ends*/
            /*  project  page starts */
 
-
+     let projlocation=useLocation()
+     let projectpath=String(projlocation.pathname).includes('/projects')
      const [projwork,setprojwork]=useState([])
      useEffect(() => {
        let projectarray=[
@@ -266,7 +269,7 @@ export const ContextSetter=({children})=>{
        return () => {
          setprojwork([])
        }
-     }, [])
+     }, [projectpath])
 
 
       /*  project  page ends */

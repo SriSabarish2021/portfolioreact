@@ -60,20 +60,20 @@
 }
 .projimg-1{
     width: 70%;
-    background-image: url('Projimg/txt2speech.png');
+    background-image: url('/Projimg/txt2speech.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 .projimg-2{
     width: 100%;
-    background-image: url('Projimg/calc.png');
+    background-image: url('/Projimg/calc.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .projimg-3{
     width: 50%;
-    background-image: url('Projimg/weather-finder.png');
+    background-image: url('/Projimg/weather-finder.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -81,7 +81,7 @@
 }
 .projimg-4{
     width: 100%;
-    background-image: url('Projimg/basic-web.png');
+    background-image: url('/Projimg/basic-web.png');
     background-repeat: no-repeat;
     background-position: center;
 
@@ -89,7 +89,7 @@
 }
 .projimg-5{
     width: 70%;
-    background-image: url('Projimg/speech2txt.png');
+    background-image: url('/Projimg/speech2txt.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -97,7 +97,7 @@
 }
 .projimg-6{
     width: 100%;
-    background-image: url('Projimg/keyboard-pianop.png');
+    background-image: url('/Projimg/keyboard-pianop.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -105,7 +105,7 @@
 }
 .projimg-7{
     width: 60%;
-    background-image: url('Projimg/canva.png');
+    background-image: url('/Projimg/canva.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -114,7 +114,7 @@
 }
 .projimg-8{
     width: 100%;
-    background-image: url('Projimg/temp-convertor.png');
+    background-image: url('/Projimg/temp-convertor.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -124,7 +124,7 @@
 .projimg-9{
     width: 70%;
 
-    background-image: url('Projimg/stopwatch.png');
+    background-image: url('/Projimg/stopwatch.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -134,7 +134,7 @@
 .projimg-10{
     width: 100%;
 
-    background-image: url('Projimg/game.png');
+    background-image: url('/Projimg/game.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -143,21 +143,21 @@
 .projimg-11{
     width: 60%;
 
-    background-image: url('Projimg/clock.png');
+    background-image: url('/Projimg/clock.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .projimg-12{
     width: 70%;
-    background-image: url('Projimg/socialmedia.png');
+    background-image: url('/Projimg/socialmedia.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .projimg-13{
     width: 70%;
-    background-image: url('Projimg/addon.png');
+    background-image: url('/Projimg/addon.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -165,21 +165,21 @@
 .projimg-14{
     width: 100%;
 
-    background-image: url('Projimg/bmi.png');
+    background-image: url('/Projimg/bmi.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .projimg-15{
     width: 50%;
-    background-image: url('Projimg/clck.png');
+    background-image: url('/Projimg/clck.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .projimg-16{
     width: 50%;
-    background-image: url('Projimg/curconv.png');
+    background-image: url('/Projimg/curconv.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -187,7 +187,7 @@
 .projimg-17{
     width: 100%;
 
-    background-image: url('Projimg/calender.png');
+    background-image: url('/Projimg/calender.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -195,7 +195,7 @@
 .projimg-18{
     width: 70%;
 
-    background-image: url('Projimg/qr.png');
+    background-image: url('/Projimg/qr.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -203,7 +203,7 @@
 .projimg-19{
     width: 70%;
 
-    background-image: url('Projimg/pass.png');
+    background-image: url('/Projimg/pass.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -211,47 +211,47 @@
 .projimg-20{
     width: 50%;
 
-    background-image: url('Projimg/quote.png');
+    background-image: url('/Projimg/quote.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .projimg-21{
     width: 100%;
-    background-image: url('Projimg/weather.png');
+    background-image: url('/Projimg/weather.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }.projimg-22{
     width: 50%;
-    background-image: url('Projimg/clrpick.png');
+    background-image: url('/Projimg/clrpick.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }.projimg-23{
     width: 100%;
-    background-image: url('Projimg/timeclock.png');
+    background-image: url('/Projimg/timeclock.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .projimg-24{
     width: 70%;
-    background-image: url('Projimg/counter.png');
+    background-image: url('/Projimg/counter.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .projimg-25{
     width: 100%;
-    background-image: url('Projimg/stpw2.png');
+    background-image: url('/Projimg/stpw2.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .projimg-26{
     width: 50%;
-    background-image: url('Projimg/actiondo.png');
+    background-image: url('/Projimg/actiondo.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -259,14 +259,14 @@
 
 .projimg-27{
     width: 100%;
-    background-image: url('Projimg/curconvapp.png');
+    background-image: url('/Projimg/curconvapp.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .projimg-28{
     width: 70%;
-    background-image: url('Projimg/simcurapp.png');
+    background-image: url('/Projimg/simcurapp.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -274,7 +274,7 @@
 
 .projimg-29{
     width: 100%;
-    background-image: url('Projimg/reactpassapp.png');
+    background-image: url('/Projimg/reactpassapp.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -282,14 +282,14 @@
 
 .projimg-30{
     width: 50%;
-    background-image: url('Projimg/reacttoggle.png');
+    background-image: url('/Projimg/reacttoggle.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .projimg-31{
     width: 70%;
-    background-image: url('Projimg/reactportfolio.png');
+    background-image: url('/Projimg/reactportfolio.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -297,7 +297,7 @@
 .projimg-32{
     width: 100%;
 
-    background-image: url('Projimg/Untitled\ design.jpg');
+    background-image: url('/Projimg/Untitled\ design.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
