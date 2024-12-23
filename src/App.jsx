@@ -8,7 +8,7 @@ import Contact from './Components/Contact'
 import About from './Components/About'
 import Header from './Components/Header'
 import Nav from './Components/Nav'
-import { ContextSetter } from './Context/Createcontext'
+import  ContextSetter  from './Context/Createcontext'
 
 function App() {
 
