@@ -1,61 +1,41 @@
-import React, { useState } from 'react'
 import "../Styles/Skills.css"
 import { CgWebsite } from "react-icons/cg";
 import { GrJava } from "react-icons/gr";
 import { FaTools } from "react-icons/fa";
 import { RiUserCommunityFill } from "react-icons/ri";
 import { IoLibrary } from "react-icons/io5";
+import { IoArrowBackCircle } from "react-icons/io5";
+import { IoArrowForwardCircle } from "react-icons/io5";
+import { useContext } from "react";
+import { Createcontext } from "../Context/Createcontext";
 
-const Skills = ({curclr,dark}) => {
+const Skills = () => {
+const {curclr,dark,nextchange,prevchange,frntbtn,backendbtn,toolsbtn,softskillbtn,libbtn,showfrnt,showback,showtools,showsoft,showlib}=useContext(Createcontext)
 
-
-  const [showfrnt,setshoefrnt]=useState(true)
-  const [showback,setshoeback]=useState(false)
-  const [showtools,setshoetools]=useState(false)
-  const [showsoft,setshoesoft]=useState(false)
-  const [showlib,setshoelib]=useState(false)
-
-  let frntbtn=()=>{
-    setshoeback(false)
-    setshoetools(false)
-    setshoesoft(false)
-    setshoelib(false)
-    setshoefrnt(true)
-  }
-  let backendbtn=()=>{
-    setshoefrnt(false)
-    setshoetools(false)
-    setshoesoft(false)
-    setshoelib(false)
-    setshoeback(true)
-  }
-  let toolsbtn=()=>{
-    setshoeback(false)
-    setshoefrnt(false)
-    setshoesoft(false)
-    setshoelib(false)
-    setshoetools(true)
-  }
-  let softskillbtn=()=>{
-    setshoetools(false)
-    setshoeback(false)
-    setshoefrnt(false)
-    setshoelib(false)
-    setshoesoft(true)
-  }
-  let libbtn=()=>{
-    setshoesoft(false)
-    setshoetools(false)
-    setshoeback(false)
-    setshoefrnt(false)
-    setshoelib(true)
-  }
   return (
     <div className='skillcontainer' style={{backgroundColor:dark?`rgb(28, 28, 28)`:`rgb(234, 234, 234)`}}>
+      <style>{
+          `
+        .responsivebar{
+        box-shadow:${dark?`rgba(60, 64, 67, 0.644) 0px 1px 2px 0px, rgba(60, 64, 67, 0.557) 0px 2px 6px 2px;`:`rgba(122, 122, 122, 0.77) 0px 1px 2px 0px, rgba(163, 163, 163, 0.75) 0px 2px 6px 2px;`} 
+        }`
+          }
+          
+        </style>
       <div className='skillcontainerhead'>
         <p className='techskill' style={{color:dark?`white`:`#625757`}}>Technical Skills</p>
       </div>
       <div className='btnandbox'>
+        
+        <div className='responsivebar' >
+          <div className='arrowicon' onClick={prevchange} style={{color:dark?`rgb(255, 255, 255)`:`rgb(67, 67, 67)`}}><IoArrowBackCircle/></div>
+          <div className='changetxt' style={{color:curclr}}><p style={{color:curclr}}>{showfrnt?"Front-End Skills":
+                showback?"Back-End Skills":
+                showtools?"Tools":
+                showsoft?"Soft Skills":
+                showlib?"Library":''}</p></div>
+          <div className='arrowicon' onClick={nextchange} style={{color:dark?`rgb(255, 255, 255)`:`rgb(67, 67, 67)`}}><IoArrowForwardCircle/></div>
+        </div>
         <div className='skillbtn'>
           <style>
             {`.frntendbox:hover{background-color:${curclr};

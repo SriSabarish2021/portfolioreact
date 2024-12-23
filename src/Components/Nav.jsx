@@ -8,8 +8,11 @@ import { FaFolderOpen } from "react-icons/fa6";
 import { MdOutlinePhoneForwarded } from "react-icons/md";
 import { NavLink } from 'react-router-dom';
 import { RiAppsLine } from "react-icons/ri";
+import { useContext } from 'react';
+import { Createcontext } from '../Context/Createcontext';
 
-const Nav = ({location,curclr,txtclr}) => {
+const Nav = () => {
+  const {location,curclr,txtclr} =useContext(Createcontext)
   const [navdisp,setnavdisp]=useState(false)
   let setnavtoanimate=()=>{
     setnavdisp(navdisp=>!navdisp)

@@ -2,8 +2,11 @@ import React from 'react'
 import "../Styles/About.css"
 import { FaDownload } from "react-icons/fa6";
 import { MdOutlineHorizontalRule } from "react-icons/md";
+import { useContext } from 'react';
+import { Createcontext } from '../Context/Createcontext';
 
-const About = ({curclr,txtclr,dark}) => {
+const About = () => {
+  const {curclr,txtclr,dark}=useContext(Createcontext)
   return (
     <div className='about' style={{backgroundColor:dark?`rgb(28, 28, 28)`:`rgb(234, 234, 234)`}}>
       <div className='padderabt'>

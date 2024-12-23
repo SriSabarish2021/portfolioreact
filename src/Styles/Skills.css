@@ -294,4 +294,234 @@
     border-radius: 50px;
     background-color: rgb(255, 123, 145);
 }
+.responsivebar{
+    
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    display: none;
+}
+.arrowicon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 400;
+}
+.changetxt{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
+}
+.changetxt p{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Saira';
+}
+
+
+@media screen and (max-width:1100px) {
+    .skillcontainer{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .skilltable{
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width:1070px) {
+    .frntendbox{
+        padding: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .skillcontainer{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .skilltable{
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+    .skillcontainer{
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    .btnandbox{
+        flex-direction: column;
+        padding-bottom: 30px;
+        align-items: center;
+    }
+    .skillbtn{
+        display: none;
+    }
+    .responsivebar{
+        width: 80%;
+        display: flex;
+    }
+    .skilltable{
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+    }
+
+}
+@media screen and (max-width:820px) {
+    .skillcontainerhead{
+        padding-left: 0px;
+    }
+    .studyline{
+        height: 7px;
+     }
+     .cover{
+        height: 7px;
+     }
+
+
+
+}
+@media screen and (max-width:730px) {
+    .skillimages img{
+        height: 26px;
+        width: 26px;
+    }
+
+
+
+}
+@media screen and (max-width:710px) {
+     .responsivebar{
+        padding-top: 5px;
+        padding-bottom: 5px;
+     }
+     .arrowicon{
+        font-size: 22px;
+     }
+     .changetxt p{
+        font-size: 18px;
+     }
+     .studyline{
+        height: 6px;
+     }
+     .cover{
+        height: 6px;
+     }
+     .skilltableboxbody{
+        padding-top: 22px;
+     }
+     .skillcontainer{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+
+}
+
+@media screen and (max-width:580px) {
+    
+    .responsivebar{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .changetxt p{
+        font-size: 17px;
+    }
+    .skillimages img{
+        height: 25px;
+        width: 25px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .btnandbox{
+        padding-top: 0px;
+    }
+    .skillcontainer{
+        gap: 10px;
+    }
+    .studyline{
+        height: 4px;
+     }
+     .cover{
+        height: 4px;
+     }
+
+}
+
+@media screen and (max-width:470px) {
+    .responsivebar{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+   .skilltable{
+    min-height: 370px;
+   }
+   .arrowicon{
+    font-size: 20px;
+ }
+ .changetxt p{
+    font-size: 16px;
+ }
+ .skillimages img{
+    height: 20px;
+    width: 20px;
+}
+.skillimages{
+    gap: 15px;
+}
+
+}
+@media screen and (max-width:450px) {
+    .techskill{
+        font-size: 22px;
+    }
+
+} 
+
+
+@media screen and (max-width:400px) {
+    .skillcontainer{
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 0px;
+    }
+    .btnandbox{
+        padding-top: 30px;
+    }
+
+} 
+@media screen and (max-width:360px) {
+    .changetxt p{
+        font-size: 15px;
+     }
+     .arrowicon{
+        font-size: 18px;
+     }
+     .responsivebar{
+        padding-left: 10px;
+        padding-right: 10px;
+     }
+} 
+
+@media screen and (max-width:320px) {
+    .skillimages{
+        gap: 5px;
+    }
+} 

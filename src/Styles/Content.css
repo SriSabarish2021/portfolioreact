@@ -56,6 +56,17 @@
     width: 490px;
     border-radius: 30px;
     height: 570px;
+    position: relative;
+}
+.cloud{
+    position: absolute;
+   
+}
+.cloudicon{
+    height: 200px;
+    width: 200px;
+    font-weight: 200;
+    font-size: 30px;
 }
 @keyframes imganimate{
     from{
@@ -274,10 +285,11 @@
 
 
 @media screen and (max-width:950px) {
+
     .imgbg img{
-        width: 340px;
+        width: 300px;
         border-radius: 30px;
-        height: 480px;
+        height: 430px;
     }
     .name{
         font-size: 28px;
@@ -294,11 +306,7 @@
     }
 }
 @media screen and (max-width:900px) {
-    .imgbg img{
-        width: 300px;
-        border-radius: 30px;
-        height: 460px;
-    }
+
     .imgbg{
         padding-left: 40px;
     }
@@ -453,6 +461,7 @@
         transform: skew(20deg);
         left: -130px;
     }
+
 }
 @media screen and (max-width:450px) {
     .maincontent::before{

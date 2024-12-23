@@ -1,27 +1,10 @@
-import React, { useState,useEffect } from 'react'
 import "../Styles/Content.css"
 import { FaArrowRight } from "react-icons/fa";
-import { useNavigate } from 'react-router-dom';
-import { useLocation } from 'react-router-dom'
+import { useContext } from 'react';
+import { Createcontext } from '../Context/Createcontext';
 
-const Content = ({curclr,txtclr,dark}) => {
-    const navigate=useNavigate()
-    let returnhome=()=>{
-        navigate('/about')
-    }
-    let homelocation=useLocation()
-    let homepath=String(homelocation.pathname).includes('/')
-    const [animate,setanimate]=useState(false)
-
-    useEffect(() => {
-            setanimate(true)   
-      return () => {
-        setanimate(false)
-      }
-    }, [homepath])
-    
-    console.log(curclr);
-    
+const Content = () => {   
+    const {curclr,txtclr,dark,gotoabout,animate}=useContext(Createcontext)
   return (
     <main className='maincontent'>
         <style>{
@@ -41,8 +24,9 @@ const Content = ({curclr,txtclr,dark}) => {
             }`}
             </style>
         <div className='imgbg'>
-            <div className='imagediv' style={{animation:animate?"imganimate 0.8s linear forwards":''}}>
+            <div className='imagediv' style={{animation:animate?"imganimate 1.5s cubic-bezier(.47,1.64,.41,.8) forwards":''}}>
                 <img src="./public/Profileimg/myimg.png" alt="Sri Sabarish.png" />
+                
             </div>
         </div>
         <div className='contbg'>
@@ -59,7 +43,7 @@ const Content = ({curclr,txtclr,dark}) => {
                 
             </div>
             <div className='homebtn'>
-                <div className='homearrbtn' onClick={()=>returnhome()}>
+                <div className='homearrbtn' onClick={()=>gotoabout()}>
                     <p className='arrow' style={{backgroundColor:`${curclr}`}}><FaArrowRight/></p>
                     <p className='arrowpara'  style={{backgroundColor:`${curclr}`,color:txtclr?'black':'white'}}>More About Me</p>
                 </div>

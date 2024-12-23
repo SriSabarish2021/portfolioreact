@@ -1,18 +1,16 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
 import "../Styles/Header.css"
 import { SlSettings } from "react-icons/sl";
 import { MdOutlineWbSunny } from "react-icons/md";
 import { FaDroplet } from "react-icons/fa6";
+import { Createcontext } from '../Context/Createcontext';
 
-const Header = ({dispatch,setdarker}) => {
- const [clrcont,setclrcont]=useState(false)
- let showclor=()=>{
-  setclrcont(!clrcont)
- }
+const Header = () => {
+  const {dispatch,setdarker,dark,clrcont,showclor}=useContext(Createcontext)
   return (
     <div className='header'>
         <div className='settings'>
-            <div id={clrcont?'animateclr':'closeanimate'} className='headbtn' onClick={()=>showclor()}><SlSettings/>
+            <div style={{border:dark?'':`1px solid rgb(179, 179, 179)`}} id={clrcont?'animateclr':'closeanimate'} className='headbtn' onClick={()=>showclor()}><SlSettings/>
               <div className='colorcontainer'>
                 <p style={{color:`rgb(255, 123, 145)`}} onClick={()=>dispatch({type:"pink"})}><FaDroplet/></p>
                 <p style={{color:`rgb(48, 255, 58)`}}  onClick={()=>dispatch({type:"green"})}><FaDroplet/></p>
@@ -23,7 +21,7 @@ const Header = ({dispatch,setdarker}) => {
                 <p style={{color:`rgb(255, 115, 0)`}}  onClick={()=>dispatch({type:"orange"})}><FaDroplet/></p>
               </div>
             </div>
-            <div className='headbtn' onClick={setdarker}><MdOutlineWbSunny/></div>
+            <div className='headbtn' onClick={setdarker} style={{border:dark?'':`1px solid rgb(179, 179, 179)`}}><MdOutlineWbSunny/></div>
         </div>
     </div>
   )

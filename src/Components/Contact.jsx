@@ -1,59 +1,15 @@
-import React, { useRef, useState, useLayoutEffect, useEffect } from 'react'
 import "../Styles/Contact.css"
 import { FaPhoneAlt } from "react-icons/fa";
 import { TfiLinkedin } from "react-icons/tfi";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { CgCloseO } from "react-icons/cg";
-import { useNavigate } from 'react-router-dom';
 import { FaHome } from "react-icons/fa";
+import { useContext } from "react";
+import { Createcontext } from "../Context/Createcontext";
 
-const Contact = ({curclr}) => {
-  const returnhome=useNavigate()
-  let reference=useRef()
-  const [bgimgurl,setbgimgurl]=useState('')
-  const [name,setname]=useState('')
-  const [email,setemail]=useState('')
-  const [message,setmessage]=useState('')
-  const [alert,setalrt]=useState(false)
-
-  useLayoutEffect(() => {
-    
-    setbgimgurl("Contactpage/contactpagebg.jpg")
-    console.log('hellooo');
-    
-    return () => {
-      setbgimgurl('')
-
-    };
-  }, [])
-
-  let homereturn=()=>{
-    returnhome('/')
-  }
+const Contact = () => {
  
-
-  let contactsubtbn=()=>{
-    if (name&&email&&message) {
-      let getvalue={
-        name:name,
-        email:email,
-        message:message
-      }
-      console.log(getvalue);
-      setalrt(true)
-    }else{
-      setalrt(true)
-    }
-    
-  }
-
-  let closealert =()=>{
-    setalrt(false)
-    setname('')
-    setemail('')
-    setmessage('')
-    reference.current.focus()
-  }
+  const {curclr,homereturn,bgimgurl,setname,setemail,setmessage,name,email,message,alert,contactsubtbn,closealert,reference}=useContext(Createcontext)
   return (
     <div className='contactcontainer' style={{backgroundImage:`url(${bgimgurl})`}}>
       <style>
