@@ -3,19 +3,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 .about{
-    height: 100%;
     width: 100%;
-    padding: 200px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    padding: 100px;
+    height: 100vh;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+.padderabt{
+    height: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 40px;
     
-}
-.padderabt{
-    width: 100%;
 }
 .aboutname{
     width: 100%;
@@ -34,16 +37,14 @@
 
 .aboutcontent{
     width: 100%;
-    height: auto;
-    min-height: 400px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
     padding-bottom: 60px;
     border-bottom: 1px solid rgba(81, 81, 81, 0.42);
     gap: 50px;
+
 }
 .personalinfo{
     width: 100%;
@@ -51,7 +52,6 @@
 }
 .skills{
     width: 100%;
-    height: 100%;
 }
 .inforhead{
     font-size: 20px;
@@ -192,26 +192,25 @@
     font-size: 14px;
 }
 
-@media screen and (max-width:1300px) {
+@media screen and (max-width:1200px) {
     .about{
-        padding-left: 160px;
-        padding-right: 160px;
+        padding-left: 80px;
+        padding-right: 80px;
     }
-    .aboutcontent{
-        gap: 20px;
-    }
+
 
 }
 @media screen and (max-width:1100px) {
     .about{
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
     .infocont1 p{
         font-size: 12px;
     }
     .resdown a{
         font-size: 14px;
+        padding-left: 20px;
     }
     .infordiv{
         gap: 0px;
@@ -231,22 +230,14 @@
     .box1, .box2, .box3, .box4{
         padding-bottom: 5px;
     }
-    .padderabt{
-        padding-top: 600px;
-        width: 100%;
-    }
     .about{
-        padding-left: 160px;
-        padding-right: 160px;
+
         overflow-y: scroll;
-        padding-bottom: 100px;
     }
     .aboutcontent{
-        min-height: 800px;
-        max-height: auto;
         flex-direction: column;
     }
-
+ 
 }
 
 
@@ -289,13 +280,8 @@
     .aboutcontent{
         margin-top: 0px;
     }
-    .padderabt{
-        padding-top: 500px;
-    }
-    .about{
-        padding-left: 30px;
-        padding-right: 30px;
-    }
+
+
     .personalinfo{
         
         padding-bottom: 10px;
@@ -351,10 +337,7 @@
         padding-left: 20px;
     
     }
-    .padderabt{
-        padding-top: 500px;
-        width: 100%;
-    }
+
 
 
 }
@@ -371,7 +354,11 @@
         padding-right: 10px;
     }
     .inforhead{
-        padding-left: 40px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .padderabt{
+        gap: 0px;
     }
 
 }

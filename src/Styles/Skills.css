@@ -4,15 +4,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 .skillcontainer{
-    height: 100%;
     width: 100%;
     background-color: rgb(29, 29, 29);
     padding: 100px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: auto;
 }
 @keyframes animatefrnt{
     from{
@@ -72,6 +74,7 @@
     justify-content: flex-start;
     align-items: center;
     text-align: center;
+    
 }
 .techskill{
     font-size: 26px;
@@ -361,13 +364,19 @@
 
 @media screen and (max-width:1000px) {
     .skillcontainer{
-        padding-left: 90px;
-        padding-right: 90px;
+        height:auto;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        gap: 0px;
+        overflow-y: scroll;
     }
     .btnandbox{
         flex-direction: column;
-        padding-bottom: 30px;
+        padding-bottom: 0px;
         align-items: center;
+        gap: 30px;
     }
     .skillbtn{
         display: none;
@@ -380,6 +389,7 @@
         padding-left: 0px;
         padding-right: 0px;
         padding-top: 0px;
+        padding-bottom: 30px;
     }
 
 }
@@ -454,7 +464,7 @@
         padding-top: 0px;
     }
     .skillcontainer{
-        gap: 10px;
+        gap: 60px;
     }
     .studyline{
         height: 4px;
@@ -505,6 +515,9 @@
     .btnandbox{
         padding-top: 30px;
     }
+    .skillimages{
+        gap: 8px;
+    }
 
 } 
 @media screen and (max-width:360px) {
@@ -518,6 +531,9 @@
         padding-left: 10px;
         padding-right: 10px;
      }
+     .skilltableboxheading p{
+        font-size: 13px;
+     }
 } 
 
 @media screen and (max-width:320px) {
@@ -525,3 +541,12 @@
         gap: 5px;
     }
 } 
+@media screen and (max-width:300px) {
+    .skilltableboxheading p{
+        font-size: 12px;
+     }
+     .skillimages img{
+        height: 15px;
+        width: 15px;
+    }
+}

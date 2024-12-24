@@ -6,17 +6,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
 
 .contactcontainer{
-    height: 100%;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.9;
-    position: relative;
+    height: 100vh;
+
 }
 .contactcontents{
     height: 100%;
@@ -218,6 +214,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    bottom: 0px;
 }
 
 .alertcontainer button{
@@ -301,21 +298,20 @@
 @media screen and (max-width:900px) {
     
     .contactcontainer{
-        min-height: 100%;
-        max-height: auto;
+        height: 100vh;
         position: fixed;
-        padding-top: 400px;
+        padding-top: 0px;
         overflow-y: scroll;
-
     }
     .contacthead{
         padding-left: 0px;
     }
     .contactcontents{
-        min-height: 1500px;
-        max-height: auto;
+
+        height: auto;
+
         justify-content: flex-start;
-        padding-top: 300px;
+        padding-top: 60px;
     }
     .contactheadcontent{
         padding-left: 25px;
@@ -352,9 +348,8 @@
         position: fixed;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        padding-top: 200px;
-        height: 1050px;
+        justify-content: center;
+
     }
     .close{
         top: 40px;
@@ -367,6 +362,13 @@
     }
     .calltxt{
         font-size: 21px;
+    }
+    
+}
+@media screen and (max-width:560px) {
+    
+    .contactheadcontent{
+        padding-left: 0px;
     }
     
 }
@@ -386,6 +388,7 @@
         top: 40px;
         right: 60px;
     }
+
     
 }
 

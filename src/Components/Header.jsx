@@ -4,6 +4,7 @@ import { SlSettings } from "react-icons/sl";
 import { MdOutlineWbSunny } from "react-icons/md";
 import { FaDroplet } from "react-icons/fa6";
 import { Createcontextsetter } from '../Context/contextfolder';
+import { BsMoonStarsFill } from "react-icons/bs";
 
 const Header = () => {
   const {dispatch,setdarker,dark,clrcont,showclor}=useContext(Createcontextsetter)
@@ -21,7 +22,7 @@ const Header = () => {
                 <p style={{color:`rgb(255, 115, 0)`}}  onClick={()=>dispatch({type:"orange"})}><FaDroplet/></p>
               </div>
             </div>
-            <div className='headbtn' onClick={setdarker} style={{border:dark?'':`1px solid rgb(179, 179, 179)`}}><MdOutlineWbSunny/></div>
+            <div className='headbtn' onClick={setdarker} style={{border:dark?'':`1px solid rgb(179, 179, 179)`}}>{dark?<MdOutlineWbSunny/>:<BsMoonStarsFill></BsMoonStarsFill>}</div>
         </div>
     </div>
   )
