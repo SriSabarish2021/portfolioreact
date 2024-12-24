@@ -243,17 +243,16 @@
     }
 }
 
-@media screen and (max-width:1150px) {
+@media screen and (max-width:1180px) {
 
     .maincontent::before{
         width: 40%;
         z-index: -10000;
-        transform: skew(20deg);
+        transform: skew(18deg);
         left: -150px;
     }
     .maincontent::after{
         content: '';
-        height: 100%;
         width:100%;
         position: fixed;
         z-index: -1000000;
@@ -371,14 +370,13 @@
     }
 
     .maincontent::before{
-        width: 50%;
+        width: 60%;
         z-index: -10000;
         transform: skew(20deg);
-        left: -150px;
+        left: -200px;
     }
     .maincontent::after{
         content: '';
-        height: 100%;
         width:100%;
         position: fixed;
         z-index: -1000000;
@@ -442,12 +440,7 @@
     .introcontdiv p{
         width: 70%;
     }
-    .maincontent::before{
-        width: 50%;
-        z-index: -10000;
-        transform: skew(20deg);
-        left: -200px;
-    }
+
     .homebtn{
         justify-content: center;
         padding-bottom: 20px;
@@ -457,21 +450,19 @@
 
 
 @media screen and (max-width:630px) {
-    .maincontent::before{
-        width: 50%;
-        z-index: -10000;
-        transform: skew(20deg);
-        left: -130px;
-    }
 
-}
-@media screen and (max-width:450px) {
     .maincontent::before{
-        width: 70%;
+        width: 60%;
         z-index: -10000;
         transform: skew(15deg);
         left: -160px;
     }
+    .whiteclr{
+        color: rgb(255, 255, 255);
+    }
+}
+@media screen and (max-width:450px) {
+    
     .whiteclr{
         color: rgb(255, 255, 255);
     }
