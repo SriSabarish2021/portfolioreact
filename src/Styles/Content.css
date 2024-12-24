@@ -25,7 +25,8 @@
 .maincontent::before{
     content: '';
     width: 30%;
-    height:100vh;
+    min-height: 100vh;
+    height: auto;
     position: fixed;
     z-index: -10000;
     transform: skew(20deg);
@@ -33,7 +34,8 @@
 }
 .maincontent::after{
     content: '';
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     width:100%;
     position: fixed;
     z-index: -1000000;
