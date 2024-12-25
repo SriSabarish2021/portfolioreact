@@ -25,8 +25,8 @@ const Project = () => {
             <div key={projectitem.id} className={`projimg projimg-${projectitem.id}`}>
               <div className='projimginsider'>
                 <a target="_blank" className="projimghref" href={projectitem.sitehref}>View Site</a>
-                <a target="_blank" className="projimghref" href={projectitem.codehref} style={{display:projectitem.id===32?'none':'block'}}>View Code</a>
-                <p style={{display:projectitem.id===32?'flex':'none',backgroundColor:'white',padding:'5px',border:'1px solid grey', borderRadius:'5px'}}>Built in Wordpress</p>
+                <a target="_blank" className="projimghref" href={projectitem.codehref} style={{display:projectitem.id===33?'none':'block'}}>View Code</a>
+                <p style={{display:projectitem.id===33?'flex':'none',backgroundColor:'white',padding:'5px',border:'1px solid grey', borderRadius:'5px'}}>Built in Wordpress</p>
               </div>
             </div>
           ))}

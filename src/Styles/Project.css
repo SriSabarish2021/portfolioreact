@@ -69,7 +69,7 @@
 }
 .projimg-2{
     width: 100%;
-    background-image: url('/Projimg/calc.png');
+    background-image: url('/Projimg/1st-portfolio.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -298,8 +298,14 @@
     background-position: center;
 }
 .projimg-32{
+    width: 50%;
+    background-image: url('/Projimg/calc.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.projimg-33{
     width: 100%;
-
     background-image: url('/Projimg/Untitled\ design.jpg');
     background-repeat: no-repeat;
     background-size: cover;
