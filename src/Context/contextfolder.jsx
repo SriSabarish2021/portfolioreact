@@ -6,8 +6,6 @@ export const Createcontextsetter = createContext({})
 
 export const ContextSetter=({children})=>{
     
-    
-  
   const [showfrnt,setshoefrnt]=useState(true)
   const [showback,setshoeback]=useState(false)
   const [showtools,setshoetools]=useState(false)
@@ -383,15 +381,15 @@ export const ContextSetter=({children})=>{
       
        
      }
- 
+  /*  skill page ends */
+
  /*  common for all pages */
-  useEffect(() => {
-      localStorage.setItem('theme',dark)
-     
-      
-  }, [dark]) 
   let setdarker=()=>{
-    setdark(dark=>!dark)
+    setdark((dark)=>{
+      let gettheme=!dark
+      localStorage.setItem('theme',gettheme)
+      return gettheme
+    })
   }
 let location=useLocation()
 const [txtclr,settxtclr]=useState(false)

@@ -1,4 +1,3 @@
-import React from 'react'
 import "../Styles/About.css"
 import { FaDownload } from "react-icons/fa6";
 import { MdOutlineHorizontalRule } from "react-icons/md";
