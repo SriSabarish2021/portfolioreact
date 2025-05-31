@@ -62,110 +62,84 @@
     border-radius: 10px;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
+    position: relative;
+     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+.img-0{
+    width: 100%;
+   
 }
 .img-1{
-    width: 100%;
-    background-image: url('/Certificationimg/nptel-AI.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.img-2{
     width: 60%;
 
-    background-image: url('/Certificationimg/COURSERA-PROJ.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  
+}
+.img-2{
+    width: 70%;
+
+   
+
 }
 .img-3{
     width: 70%;
 
-    background-image: url('/Certificationimg/CONG-CLS.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
+   
 }
 .img-4{
-    width: 70%;
+    width: 100%;
+   
 
-    background-image: url('/Certificationimg/GL-FRT.jpeg');
-    background-repeat: no-repeat;
-    background-position: center;
-
-    background-size: cover;
 }
 .img-5{
-    width: 100%;
-    background-image: url('/Certificationimg/GOOGLE-AI.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    width: 60%;
+
+   
 
 }
 .img-6{
-    width: 60%;
+    width: 100%;
+    
 
-    background-image: url('/Certificationimg/GL.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 
 }
 .img-7{
-    width: 100%;
-    background-image: url('/Certificationimg/INFO-AI.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    width: 60%;
+
+   
 
 
 }
 .img-8{
-    width: 60%;
+    width: 70%;
 
-    background-image: url('/Certificationimg/info-DS.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
+    
 
 }
 .img-9{
     width: 70%;
 
-    background-image: url('/Certificationimg/INFO-WEB DEV.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-
 }
 .img-10{
-    width: 70%;
-
-    background-image: url('/Certificationimg/PYTHON.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-}
-.img-11{
     width: 60%;
 
-    background-image: url('/Certificationimg/SCALER-AI.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+   
 }
-.img-12{
+.img-11{
     width: 100%;
-    background-image: url('/Certificationimg/SCALER.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    
 
 
+}
+.image-certificate{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 .img:hover{
     transform: scale(1.1);
@@ -174,8 +148,10 @@
     transition-delay: 0.1s;
 }
 .imginsider{
+    position: absolute;
     height: 100%;
     width: 100%;
+   
     display: flex;
     flex-direction: column;
     justify-content: center;

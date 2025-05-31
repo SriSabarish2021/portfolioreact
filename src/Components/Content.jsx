@@ -2,7 +2,7 @@ import "../Styles/Content.css"
 import { FaArrowRight } from "react-icons/fa";
 import { useContext } from 'react';
 import { Createcontextsetter } from '../Context/contextfolder';
-
+import { Image } from '@imagekit/react';
 const Content = () => {   
     const {curclr,txtclr,dark,gotoabout,animate}=useContext(Createcontextsetter)
   return (
@@ -13,7 +13,7 @@ const Content = () => {
                 background-color:${curclr};
             }
             .maincontent::after{
-                background-color:${dark?`rgb(28, 28, 28)`:'rgb(234, 234, 234)'} ;
+                background-color:${dark?`rgb(28, 28, 28)`:`rgb(234, 234, 234)`} ;
             }
             .homearrbtn:hover .arrowpara{
                 background-color:${curclr};}
@@ -25,8 +25,13 @@ const Content = () => {
             </style>
         <div className='imgbg'>
             <div className='imagediv' style={{animation:animate?"imganimate 1.5s cubic-bezier(.47,1.64,.41,.8) forwards":''}}>
-                <img src="/Profileimg/myimg.png" alt="Sri Sabarish.png" />
                 
+                  <Image
+                    urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    src="/myimg.png"
+                    alt="Sri Sabarish.png"
+                    className='sri-sabarish-img'
+                    />
             </div>
         </div>
         <div className='contbg'>

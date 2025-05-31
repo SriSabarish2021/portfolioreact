@@ -8,6 +8,7 @@ import { IoArrowBackCircle } from "react-icons/io5";
 import { IoArrowForwardCircle } from "react-icons/io5";
 import { useContext } from "react";
 import { Createcontextsetter } from "../Context/contextfolder";
+import { Image } from '@imagekit/react';
 
 const Skills = () => {
 const {curclr,dark,nextchange,prevchange,frntbtn,backendbtn,toolsbtn,softskillbtn,libbtn,showfrnt,showback,showtools,showsoft,showlib}=useContext(Createcontextsetter)
@@ -95,31 +96,113 @@ const {curclr,dark,nextchange,prevchange,frntbtn,backendbtn,toolsbtn,softskillbt
                 showsoft?"Soft Skills":
                 showlib?"Library":''}</p>
               {showfrnt?
-                <div className='skillimages'>
-                  <img src="/Iconimg/html.png" alt="sri sabarish.png" />
-                  <img src="/Iconimg/css.png" alt="sri sabarish.png" />
-                  <img src="/Iconimg/js.png" alt="sri sabarish.png"/>
-                  <img src="/Iconimg/ts.png" alt="sri sabarish.png"/>
+                <div className='skillimages'
+                >
+                   <Image
+                    urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    src="/html.png"
+                    alt="Sri Sabarish.png"
+                    className='image-skill'
+                    />
+                    <Image
+                    urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    src="/css.png"
+                    alt="Sri Sabarish.png"
+                    className='image-skill'
+                    />
+                    <Image
+                    urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    src="/js.png"
+                    alt="Sri Sabarish.png"
+                    className='image-skill'
+                    />
+                    <Image
+                    urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    src="/ts.png"
+                    alt="Sri Sabarish.png"
+                    className='image-skill'
+                    />
+                 
                 </div>:
                 showback?<div className='skillimages'>
-                  <img src="/Iconimg/js.png" alt="sri sabarish.png"/>
-                  <img src="/Iconimg/node2.png" alt="sri sabarish.png"/>
+                   <Image
+                    urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    src="/js.png"
+                    alt="Sri Sabarish.png"
+                    className='image-skill'
+                    />
+                    <Image
+                    urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    src="/node2.png"
+                    alt="Sri Sabarish.png"
+                    className='image-skill'
+                    />
                 </div>:
                 showtools?<div className='skillimages'>
-                  <img src="/Iconimg/vs.png" alt="sri sabarish.png" />
-                  <img src="/Iconimg/vite.png" alt="sri sabarish.png" />
-                  <img src="/Iconimg/webpack.png" alt="sri sabarish.png"/>
-                  <img src="/Iconimg/git.png" alt="sri sabarish.png"/>
-                  <img src="/Iconimg/API.png" alt="sri sabarish.png"/>
+                   <Image
+                    urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    src="/vs.png"
+                    alt="Sri Sabarish.png"
+                    className='image-skill'
+                    />
+                    <Image
+                    urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    src="/vite.png"
+                    alt="Sri Sabarish.png"
+                    className='image-skill'
+                    /> <Image
+                    urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    src="/webpack.png"
+                    alt="Sri Sabarish.png"
+                    className='image-skill'
+                    />
+                    <Image
+                    urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    src="/git.png"
+                    alt="Sri Sabarish.png"
+                    className='image-skill'
+                    /> <Image
+                    urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    src="/API.png"
+                    alt="Sri Sabarish.png"
+                    className='image-skill'
+                    />
+                    
+                
                 </div>:
                 showsoft?<div className='skillimages'>
-                  <img src="/Iconimg/attention.png" alt="sri sabarish.png" />
-                  <img src="/Iconimg/communication skill.png" alt="sri sabarish.png" />
-                  <img src="/Iconimg/creativetity.png" alt="sri sabarish.png"/>
-                  <img src="/Iconimg/prbsol.png" alt="sri sabarish.png"/>
+                   <Image
+                    urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    src="/attention.png"
+                    alt="Sri Sabarish.png"
+                    className='image-skill'
+                    /> <Image
+                    urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    src="/communication skill.png"
+                    alt="Sri Sabarish.png"
+                    className='image-skill'
+                    />
+                     <Image
+                    urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    src="/creativetity.png"
+                    alt="Sri Sabarish.png"
+                    className='image-skill'
+                    /> <Image
+                    urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    src="/prbsol.png"
+                    alt="Sri Sabarish.png"
+                    className='image-skill'
+                    />
+                
                 </div>:
                 showlib?<div className='skillimages'>
-                  <img src="/Iconimg/react.png" alt="sri sabarish.png"/>
+                  <Image
+                    urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    src="/react.png"
+                    alt="Sri Sabarish.png"
+                    className='image-skill'
+                    />
+                  
                 </div>:''} 
             </div>
             <div className='skilltableboxbody'>
